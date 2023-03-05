@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es-PA">
+    <head>
+        <title>UrbanRunners | Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This web site is about...">
+        <meta name="keywords" content="gym,workout,run,sports,fitness,lifestyle,health,food">
+        <meta name="author" content="Egonzdev">
+        <link rel="icon" type="image/png" href="/assets/favicon/ur-logo.png">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="https://kit.fontawesome.com/8466f6ca41.js" crossorigin="anonymous"></script>
+    </head>
+
+    <!--<i class="fa-solid fa-angle-down"></i> (Angle-down Arrow)-->
+    <!-- <i class="fa-solid fa-angle-up"></i> (Angle-Up Arrow) -->
+    <!-- <i class="fa-solid fa-angle-left"></i> (Angle-Left Arrow) -->
+    <!-- <i class="fa-solid fa-angle-right"></i> (Angle-right) -->
+
+    <!-- <i class="fa-solid fa-user"></i> (User-Solid)-->
+    <!-- <i class="fa-regular fa-user"></i> (User hollow) -->
+
+    <!-- <i class="fa-brands fa-youtube"></i> Youtube -->
+    <!-- <i class="fa-brands fa-instagram"></i> Instagram -->
+    <!-- <i class="fa-brands fa-twitter"></i> Twitter -->
+
+    <!-- <i class="fa-solid fa-bars"></i> Bars open Sidenav -->
+    <!-- <i class="fa-solid fa-xmark"></i> Close X -->
+
+    <!-- <i class="fa-solid fa-person-running"></i> Person Running--> 
+
+    <body>
+        <!-- Sidenav Box (Fixed) (Capa 2) -->
+        <div id="sideNav" class="sidenav">
+            <!-- Sn-ControlsBOX -->
+            <div class="sn-controls">
+                <!-- SN-CTRL-A -->
+                <a class="sn-controls-a" href="#"><i class="fa-solid fa-user" style="color:#D9D9DE;"></i></a>
+                <!-- SN-CTRL-CLOSEBTN -->
+                <span class="sn-controls-closebtn" onclick="closeSn()"><i class="fa-solid fa-angle-up" style="color:#D9D9DE;transform:scale(1.2);"></i></span>
+            </div>
+
+            <!-- SN-nav-box -->
+            <nav>
+                <!-- enlaces del nav -->
+                <a class="sn-nav-a" href="#">UR</a>
+                <a class="sn-nav-a" href="#">Challenges</a>
+                <a class="sn-nav-a" href="#">Events</a>
+                <a class="sn-nav-a" href="#">About Us</a>
+                <a class="sn-nav-a" href="#">Help</a>
+            </nav>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <!-- Header (Capa 1) -->
+        <header>
+            <!-- Logo link -->
+            <a class="header-logo" href="#">UrbanRunners</a>
+            <!-- Open SideNav btn -->
+            <span class="openbtn" onclick="openSn()"><i class="fa-solid fa-angle-down" style="color:#161713;"></i></span>
+        </header>
+
+        <!-- Main (Capa 0) -->
+        <main>
+            <!-- First Section -->
+            <section class="sect hero">
+                <!-- Hero Sect Video (Mobile) -->
+                <video autoplay muted loop>
+                    <source type="video/mp4" src="/assets/videos/vertical-mobile-hero.mp4">
+                    Ops, your browser does not support video!
+                </video>
+                <!-- Hero Textbox -->
+                <div class="hero-textbox">
+                    <!-- Hero (heading) -->
+                    <h2 class="hero-h2">Today We Can<br>Make The<br><span class="hero-h2-span">Difference</span></h2>
+                    <!--Hero (Paragraph)-->
+                    <p class="hero-parag">Be encouraged to take the first steps towards your goals.</p>
+                    <button class="hero-button">Start Now</button>
+                </div>
+            </section>
+
+            <!-- <section class="sect s2">
+                <div class="s2-textbox">
+                    <h2 class="s2-heading">Confian en nosotros</h2>
+                    <p class="s2-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit!</p>
+                </div>
+            </section> -->
+        </main>
+
+
+        <!-- JS -->
+        <script>
+            let sidenav = document.getElementById('sideNav');
+
+            function openSn() {
+                sidenav.style.transform = "translateY(0%)";
+            }
+
+            function closeSn() {
+                sidenav.style.transform = "translateY(-100%)";
+            }
+        </script>
+    </body>
+</html>
